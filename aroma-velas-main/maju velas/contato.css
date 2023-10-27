@@ -1,0 +1,12 @@
+.logotipo{
+    width: 40%;
+    position: absolute;
+}
+
+body{
+    background-color:white
+}
+
+.logo{
+    text-align: center;
+}
