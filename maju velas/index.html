@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="principal.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aroma Velas</title>
@@ -13,9 +13,7 @@
         <div class="caixa">
            <h1><img class="logotipo" src="logotipo.png" alt="Logo do site"></h1> 
        
-            <nav>
-                <img class="pesquisa" src="pesquisa_icone.png">
-            </nav>
+           
             
         </div> 
         <div class="dropdown">
@@ -32,7 +30,18 @@
 
             </div>
         </div>
-        </header>    
+            <!-- Load icon library -->
+        
+
+            <div class="busca">
+            <!-- The form -->
+                <form class="example" action="action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+    </header>   
+
     <main>
         <div class="banner">
             <img class="vela1" src="vela alecrim.png">
@@ -41,6 +50,10 @@
         <img class="cartao" src="cartao.png">
         <img class="cadeado" src="cadeado.png">
     </main>
-    <script src="java.js"></script>
+    
+    
+
+
+<script src="java.js"></script>
 </body>
 </html>

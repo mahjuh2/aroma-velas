@@ -60,7 +60,7 @@ nav{
 .dropbtn {
     
     background-image: url("icone_menu.png");
-    background-size: 200px;
+    background-size: 50px;
     background-color: rgba(194, 183, 175, 0.966);
     color: rgba(194, 183, 175, 0.966);
     padding: 16px;
@@ -69,6 +69,7 @@ nav{
     cursor: pointer;
     width: 200px;
     height: 30px;
+    background-repeat: no-repeat;
     
   }
   
@@ -106,3 +107,46 @@ nav{
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: right;
+    width: 20%;
+    padding: 10px;
+    background: rgba(194, 183, 175, 0.966);
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: rgba(194, 183, 175, 0.966);
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.busca{
+    position: absolute;
+    right: 0;
+    top: 218px;
+}
