@@ -12,8 +12,7 @@
     <header>
         <div class="caixa">
            <h1><img class="logotipo" src="logotipo.png" alt="Logo do site"></h1> 
-       
-           
+           <img class="pessoa" src="pessoa.png">
             
         </div> 
         <div class="dropdown">
@@ -40,6 +39,38 @@
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
+            <!-- Button to open the modal login form -->
+<button class="button" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+
+    <div class="container">
+      <label for="uname"><b>Usuário</b></label>
+      <input type="text" placeholder="Nome de Usuário" name="uname" required>
+
+      <label for="psw"><b>Senha</b></label>
+      <input type="password" placeholder="Digite sua Senha" name="psw" required>
+
+      <a href="button"></a><button type="submit" class="login" id="login">Login</button>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Lembrar de mim
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+      <span class="psw">Esqueceu a senha? <a href="#">Mudar senha</a></span>
+    </div>
+  </form>
+</div>
     </header>   
 
     <main>
@@ -51,9 +82,6 @@
         <img class="cadeado" src="cadeado.png">
     </main>
     
-    
-
-
 <script src="java.js"></script>
 </body>
 </html>
